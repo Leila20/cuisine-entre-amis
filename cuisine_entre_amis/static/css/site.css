@@ -5183,6 +5183,10 @@ button.close {
     display: none !important; } }
 .navbar-fixed-top {
   background-color: #56CEE9; }
+.navbar-fixed-top .navbar-header img {
+  float: left;
+  width: 50px;
+  height: 50px; }
 .navbar-fixed-top .navbar-header a {
   color: #fff; }
 .navbar-fixed-top .navbar-header a:hover, .navbar-fixed-top .navbar-header a:focus {

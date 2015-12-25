@@ -2,6 +2,13 @@
   background-color:             $brand-primary;
 
   .navbar-header {
+
+    img {
+      float:                    left; 
+      width:                    50px;
+      height:                   50px;
+    }
+    
     a {
       color:                    $white;
     }
@@ -21,6 +28,7 @@
     }
   }
 }
+
 
 .footer {
   height:                       40px;
