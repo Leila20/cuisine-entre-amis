@@ -1,9 +1,49 @@
-/* Write your custom sass here */
-#CookielawBanner {
-  margin-top: 60px;
-  margin-bottom: -80px;
-  border: 1px solid $brand-danger;
+.navbar-fixed-top {
+  background-color:             $brand-primary;
+
+  .navbar-header {
+
+    img {
+      float:                    left; 
+      width:                    50px;
+      height:                   50px;
+    }
+    
+    a {
+      color:                    $white;
+    }
+  
+    a:hover, a:focus {
+      color:                    $white;
+    }
+  }
+
+  .menu {
+    a {
+      color:                    $white;
+    }
+  
+    a:hover, a:focus {
+      background-color:         transparent;
+    }
+  }
 }
-.firstDiv {
-  margin-top: 100px;
+
+
+.footer {
+  height:                       40px;
+  background-color:             $brand-primary;
+
+  p{
+    color:                      $white;
+    margin-left:                15px;
+    margin-top:                 10px;
+
+    a{
+      color:                    #ff8316;
+    }
+    a:active, a:hover {
+      text-decoration:        none;
+    }
+  }
 }
