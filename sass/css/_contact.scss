@@ -1,16 +1,16 @@
-.contact-picture{
+.contactus {
   margin-top:                     20vh;
-}
 
-.contact-form {
+  .form-horizontal {
  
-  .submit{
-    background-color:               $brand-primary;
-    color:                          $white;
-  }
+    .submit{
+      background-color:               $brand-primary;
+      color:                          $white;
+    }
 
-  .pull-right {
+    .pull-right {
       float:                        none !important;
       margin-top:                   30px;
     }
+  }  
 }

@@ -5208,12 +5208,11 @@ button.close {
 .footer p a:active, .footer p a:hover {
   text-decoration: none; }
 
-.contact-picture {
+.contactus {
   margin-top: 20vh; }
-
-.contact-form .submit {
+.contactus .form-horizontal .submit {
   background-color: #56CEE9;
   color: #fff; }
-.contact-form .pull-right {
+.contactus .form-horizontal .pull-right {
   float: none !important;
   margin-top: 30px; }
