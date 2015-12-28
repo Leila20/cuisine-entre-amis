@@ -5207,3 +5207,13 @@ button.close {
   color: #ff8316; }
 .footer p a:active, .footer p a:hover {
   text-decoration: none; }
+
+.contact-picture {
+  margin-top: 20vh; }
+
+.contact-form .submit {
+  background-color: #56CEE9;
+  color: #fff; }
+.contact-form .pull-right {
+  float: none !important;
+  margin-top: 30px; }

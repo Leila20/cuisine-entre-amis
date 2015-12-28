@@ -3,5 +3,19 @@
 {% load staticfiles %}
 
 {% block content %}
- 
+  <div class="contact">
+    <div class="contact-picture">
+      <div class="hidden-xs col-sm-6">
+        <img src="../static/img/contact.jpg">
+      </div>
+    </div>
+    
+    <div class="contact-form">
+      <div class="formulaire col-xs-12 col-sm-6">
+        <div class="form-horizontal">
+          {% crispy form %}
+        </div>
+      </div>
+    </div>    
+  </div>
 {% endblock %}
