@@ -1,9 +1,9 @@
-
+from django.views.generic import ListView
 from django.views.generic.edit import FormView
 
 from django.core.urlresolvers import reverse_lazy
 
-from .models import Contact
+from .models import Contact, Post
 from .forms import ContactForm
 
 
@@ -19,3 +19,9 @@ class ContactView(FormView):
       form.save()
 
     return super(ContactView, self).form_valid(form)
+
+
+class PostView(ListView):
+
+  model = Post
+  template_name = 'cuisine_entre_amis/Post.html'
