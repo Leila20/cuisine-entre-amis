@@ -5181,8 +5181,16 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+main {
+  margin-top: 50px; }
+
 .navbar-fixed-top {
-  background-color: #56CEE9; }
+  background-color: #56CEE9;
+  height: 5%;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+.navbar-fixed-top .container {
+  height: 100%; }
 .navbar-fixed-top .navbar-header img {
   float: left;
   width: 50px;

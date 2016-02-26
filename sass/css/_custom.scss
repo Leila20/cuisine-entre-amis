@@ -1,7 +1,20 @@
+main {
+  margin-top:                   $navbar-height;
+}
+
 .navbar-fixed-top {
   background-color:             $brand-primary;
+  height:                       5%;
+  padding-bottom:               0;
+  margin-bottom:                0;
+  
+
+  .container {
+    height:                     100%;
+  }
 
   .navbar-header {
+
 
     img {
       float:                    left; 
