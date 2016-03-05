@@ -37,6 +37,8 @@ class Post(models.Model):
   published = models.BooleanField(_('Published'), default=True)
   created = models.DateTimeField(_('Created'), auto_now_add=True)
   publish_on = models.DateTimeField('Publish on', blank=True, null=True)
+  intro = models.TextField(blank=True, null=True)
+  intro_pic = models.ImageField(blank=True, null=True)
 
   class Meta:
     ordering = ['-publish_on']

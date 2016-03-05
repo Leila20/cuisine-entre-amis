@@ -2,6 +2,21 @@
 {% load staticfiles %}
 
 
-{% block content %}
-  <h2>Hello World</h2>
+{%block content %}
+  {%for object in object_list%}
+    <div class="article">
+      <div class="title-article">
+        <h2>{{object.title}}</h2>
+      </div>
+      <div class="article-body" style="float-right;"> 
+        {%for post in object_list %}
+        <small>publish on {{post.publish_on}}</small>
+        <p>{{post.intro|linebreaks}}</p>
+        <div class="intro-pic" style="float-left;">
+          <img src="{{post.intro_pic.url}}">
+        </div>
+          {% endfor %}
+      </div>
+    </div>
+  {%endfor%}
 {% endblock %}
