@@ -1,0 +1,33 @@
+.title-article {
+  h2 {
+    font-family:                      "fontleroybrownregular";
+    font-size:                        50px;
+    text-align:                       center;
+  }
+}
+
+.article {
+  width:                              60%;
+}
+
+.article-body {
+  p {
+    font-family:                      "Bellota";
+    width:                            100%;
+    text-align:                       justify;
+  }
+
+  small{
+    color:                            $brand-primary;
+  }
+
+    background:                       rgba(0, 0, 0, .65);
+    border-radius:                    5px;
+    color:                            $white;
+    padding:                          8px;
+  
+    img {
+      width:                          50px;
+      height:                         50px; 
+    }
+ }
