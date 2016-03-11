@@ -20,7 +20,7 @@ admin.site.register(Author, AuthorAdmin)
 
 
 class PostAdmin(admin.ModelAdmin):
-  list_display = ('__str__',)
+  list_display = ('title',)
   inlines = [
     PostPartInline,
   ]

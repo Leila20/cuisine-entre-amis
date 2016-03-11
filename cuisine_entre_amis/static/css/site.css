@@ -5233,22 +5233,39 @@ main {
   text-align: center; }
 
 .article {
-  width: 60%; }
+  width: 100%; }
 
 .article-body {
+  width: 100%;
+  height: 40%;
   background: rgba(0, 0, 0, 0.65);
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px; }
+.article-body .article-text {
+  float: right;
   border-radius: 5px;
   color: #fff;
-  padding: 8px; }
-.article-body p {
+  padding: 8px;
+  width: 60%; }
+.article-body .article-text p {
   font-family: "Bellota";
   width: 100%;
-  text-align: justify; }
-.article-body small {
+  text-align: justify;
+  float: right; }
+.article-body .article-text small {
   color: #56CEE9; }
-.article-body img {
-  width: 50px;
-  height: 50px; }
+.article-body .intro-pic {
+  width: 40%;
+  float: left;
+  height: 100%; }
+.article-body .intro-pic img {
+  width: 100%;
+  height: 100%; }
+.article-body .readmore {
+  float: right;
+  font-weight: bold; }
+.article-body .readmore a {
+  text-decoration: none; }
 
 @font-face {
   font-family: "fontleroybrownregular";

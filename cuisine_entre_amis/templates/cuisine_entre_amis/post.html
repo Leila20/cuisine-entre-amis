@@ -8,14 +8,17 @@
       <div class="title-article">
         <h2>{{object.title}}</h2>
       </div>
-      <div class="article-body" style="float-right;"> 
-        {%for post in object_list %}
-        <small>publish on {{post.publish_on}}</small>
-        <p>{{post.intro|linebreaks}}</p>
-        <div class="intro-pic" style="float-left;">
-          <img src="{{post.intro_pic.url}}">
+      <div class="container">
+        <div class="article-body"> 
+            <div class="article-text">
+              <small>publish on {{object.publish_on}}</small>
+              <p>{{object.intro|linebreaks}}</p>
+            </div>
+            <div class="intro-pic">
+              <img src="{{object.intro_pic.url}}">
+            </div>
+          <button class="readmore btn btn-sm" type="submit"><a href="#">Read more</a></button>
         </div>
-          {% endfor %}
       </div>
     </div>
   {%endfor%}
