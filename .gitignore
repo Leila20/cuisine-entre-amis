@@ -1,0 +1,6 @@
+.sass-cache/
+environ.py
+images/
+settings.dev_leila
+*.pyc
+*.env
