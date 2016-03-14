@@ -29,5 +29,5 @@ class PostView(ListView):
 
 class PostDetailsView(DetailView):
 
-    model = Post
-    template_name = 'cuisine_entre_amis/post_details.html'
+  model = Post
+  template_name = 'cuisine_entre_amis/post_details.html'

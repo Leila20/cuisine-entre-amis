@@ -2,5 +2,8 @@
 environ.py
 images/
 settings.dev_leila
-*.pyc
-*.env
+*.pyc/
+*.env/
+environ.py.dist
+
+
