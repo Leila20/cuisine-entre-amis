@@ -1,4 +1,4 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from django.views.generic.edit import FormView
 
 from django.core.urlresolvers import reverse_lazy
@@ -24,4 +24,10 @@ class ContactView(FormView):
 class PostView(ListView):
 
   model = Post
-  template_name = 'cuisine_entre_amis/Post.html'
+  template_name = 'cuisine_entre_amis/post.html'
+
+
+class PostDetailsView(DetailView):
+
+    model = Post
+    template_name = 'cuisine_entre_amis/post_details.html'

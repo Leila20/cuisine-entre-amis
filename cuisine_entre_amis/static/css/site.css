@@ -5193,7 +5193,8 @@ button.close {
   font-style: normal; }
 main {
   margin-top: 75px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  height: 80%; }
 
 .navbar-fixed-top {
   background-color: #56CEE9;

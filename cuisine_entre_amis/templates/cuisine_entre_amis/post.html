@@ -17,7 +17,9 @@
             <div class="intro-pic">
               <img src="{{object.intro_pic.url}}">
             </div>
-          <button class="readmore btn btn-sm" type="submit"><a href="#">Read more</a></button>
+            <button class="readmore btn btn-sm" type="submit">
+              <a href="{% url 'post_details' object.pk %}">Read more</a>
+            </button>
         </div>
       </div>
     </div>
