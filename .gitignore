@@ -5,5 +5,7 @@ settings.dev_leila
 *.pyc/
 *.env/
 environ.py.dist
-
-
+*__pycache__
+venv/
+uploads/
+db.sqlite3
