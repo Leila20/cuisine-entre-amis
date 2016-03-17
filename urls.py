@@ -16,5 +16,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^contact/$', ContactView.as_view(template_name='cuisine_entre_amis/contact.html'), name='contact'),
     url(r'^$', PostView.as_view(template_name='cuisine_entre_amis/post.html'), name='post'),
-    url(r'^/(?P<pk>[0-9]+)/$', PostDetailsView.as_view(template_name='cuisine_entre_amis/post_details.html'), name='post_details'),
+    url(r'^Detail/(?P<pk>[0-9]+)/$', PostDetailsView.as_view(template_name='cuisine_entre_amis/post_details.html'), name='post_details'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
