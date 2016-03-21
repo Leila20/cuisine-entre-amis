@@ -14,7 +14,7 @@ admin.site.register(Contact, ContactAdmin)
 
 
 class AuthorAdmin(admin.ModelAdmin):
-  pass
+    list_display = ('__str__', 'last_name',)
 
 admin.site.register(Author, AuthorAdmin)
 

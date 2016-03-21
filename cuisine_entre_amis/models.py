@@ -26,6 +26,8 @@ class Author(models.Model):
   first_name = models.CharField(max_length=100)
   last_name = models.CharField(max_length=100, blank=True, null=True)
 
+  def __str__(self):
+    return self.first_name
 
 class Post(models.Model):
 
@@ -39,6 +41,7 @@ class Post(models.Model):
   publish_on = models.DateTimeField('Publish on', blank=True, null=True)
   intro = models.TextField(blank=True, null=True)
   intro_pic = models.ImageField(blank=True, null=True)
+  author = models.ForeignKey('Author')
 
   class Meta:
     ordering = ['-publish_on']

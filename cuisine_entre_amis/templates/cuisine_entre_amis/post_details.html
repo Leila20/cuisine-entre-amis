@@ -5,6 +5,7 @@
   <div class="title-article">
     <h2>{{object.title}}</h2>
   </div>
+  <small>publish on {{object.publish_on}} by {{object.author}}</small></br>
   {% for part in object.parts.all %}
     {% if part.type == 'left' %}
       <img style="max-width: 40%; padding:5px; float:left;" src="{{part.pic.url}}" >
@@ -16,6 +17,7 @@
     {% if part.type != 'pic' and part.type != '2pics' and part.type != '3pics' %}
       {{part.text|linebreaks}}
     {% endif %}
+    <div class="clearfix"></div>
   {% endfor %}
 {% endblock %}
 
