@@ -5288,3 +5288,8 @@ main {
   font-family: 'Bellota';
   src: url("../fonts/bootstrap/../Bellota-Regular-webfont.eot");
   src: url("../fonts/bootstrap/../Bellota-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/../Bellota-Regular-webfont.woff") format("woff"), url("../fonts/bootstrap/../Bellota-Regular-webfont.ttf") format("truetype"), url("../fonts/bootstrap/../Bellota-Regular-webfont.svg#Bellota") format("svg"); }
+main {
+  min-height: 100%; }
+
+.container-fluid {
+  margin-top: -50px; }
