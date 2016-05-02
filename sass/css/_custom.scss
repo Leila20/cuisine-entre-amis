@@ -1,7 +1,7 @@
 main {
   margin-top:                   $navbar-height*1.5;
   margin-left:                  15px;
-  height:                       80%;
+  margin-bottom:                70px;
 }
 
 .navbar-fixed-top {
@@ -13,6 +13,10 @@ main {
 
   .container {
     height:                     100%;
+  }
+
+  .search {
+    float:                      right;
   }
 
   .navbar-header {

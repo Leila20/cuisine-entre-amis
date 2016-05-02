@@ -45,16 +45,16 @@
             <li class="active"><a href="{% url 'post' %}">Articles</a></li>
             <li class="active"><a href="{% url 'contact' %}">Contact</a></li>
           </ul>
+          <form method="get" action="{% url 'search' %}" class="navbar-form search navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" name="q" value="{{ request.GET.q }}" placeholder="Search">
+            </div>
+            <button type="Submit" class="btn btn-default">Submit</button>
+          </form>
         </div><!--/.nav-collapse -->
-        <form class="navbar-form navbar-right" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="Submit" class="btn btn-default">Submit</button>
-        </form>
       </div>
     </nav>
-    <main style="height:100%">
+    <main>
       {% block content %}
       {% endblock %}
     </main>
