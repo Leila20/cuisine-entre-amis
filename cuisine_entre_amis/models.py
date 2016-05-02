@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from taggit.managers import TaggableManager
 
 import random
 import string
@@ -42,6 +43,8 @@ class Post(models.Model):
   intro = models.TextField(blank=True, null=True)
   intro_pic = models.ImageField(blank=True, null=True)
   author = models.ForeignKey('Author')
+
+  tags = TaggableManager()
 
   class Meta:
     ordering = ['-publish_on']
