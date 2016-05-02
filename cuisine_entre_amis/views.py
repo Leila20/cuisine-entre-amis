@@ -3,6 +3,8 @@ from django.views.generic.edit import FormView
 
 from django.core.urlresolvers import reverse_lazy
 
+from taggit.models import Tag
+
 from .models import Contact, Post
 from .forms import ContactForm
 
@@ -31,3 +33,19 @@ class PostDetailsView(DetailView):
 
   model = Post
   template_name = 'cuisine_entre_amis/post_details.html'
+
+
+class PostTaggedView(PostView):
+
+    def get_queryset(self):
+        slug = self.kwargs.get('slug', '')
+        queryset = super(PostTaggedView, self).get_queryset()
+        return queryset.filter(tags__slug__iexact=slug)
+
+    def get_contect_data(self, **kwargs):
+        context = super(PostTaggedView, self).get_contect_data(**kwargs)
+        slug = self.kwargs.get('slug', '')
+        tag = Tag.object.filter(slug__iexact=slug)
+        if len(tag):
+            context['cur_tag']=tag[0]
+        return context
