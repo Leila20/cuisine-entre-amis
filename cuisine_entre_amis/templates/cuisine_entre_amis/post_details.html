@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="container-fluid" style="height:90%;">
+    <div class="title-article">
+      <h2>{{object.title}}</h2>
+    </div>
+    <small>publish on {{object.publish_on}} by {{object.author}}</small></br>
+    {% for part in object.parts.all %}
+      {% if part.type == 'left' %}
+        <img style="max-width: 40%; padding:5px; float:left;" src="{{part.pic.url}}" >
+      {% elif part.type == 'right' %}
+        <img style="max-width:40%; padding:5px; float:right;" src="{{part.pic.url}}" >
+      {% elif part.type == 'pic' %}
+        <div  src="{{part.pic}}" ></div><p></p>
+      {% endif %}
+      {% if part.type != 'pic' and part.type != '2pics' and part.type != '3pics' %}
+        {{part.text|linebreaks}}
+      {% endif %}
+      <div class="clearfix"></div>
+    {% endfor %}
+  </div>
+{% endblock %}
+

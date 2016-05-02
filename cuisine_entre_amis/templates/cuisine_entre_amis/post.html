@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{%block content %}
+  {%for object in object_list%}
+    <div class="article">
+      <div class="title-article">
+        <h2>{{object.title}}</h2>
+      </div>
+      <div class="container">
+        <div class="article-body"> 
+            <div class="article-text">
+              <small>publish on {{object.publish_on}}</small>
+              <p>{{object.intro|linebreaks}}</p>
+            </div>
+            <div class="intro-pic">
+              <img src="{{object.intro_pic.url}}">
+            </div>
+            <button class="readmore btn btn-sm" type="submit">
+              <a href="{% url 'post_details' object.pk %}">Read more</a>
+            </button>
+        </div>
+      </div>
+    </div>
+  {%endfor%}
+{% endblock %}

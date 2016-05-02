@@ -1,7 +1,22 @@
+main {
+  margin-top:                   $navbar-height*1.5;
+  margin-left:                  15px;
+  height:                       80%;
+}
+
 .navbar-fixed-top {
   background-color:             $brand-primary;
+  height:                       5%;
+  padding-bottom:               0;
+  margin-bottom:                0;
+  
+
+  .container {
+    height:                     100%;
+  }
 
   .navbar-header {
+
 
     img {
       float:                    left; 

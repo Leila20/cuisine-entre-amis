@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Bellota';
+  src: url('#{$icon-font-path}../Bellota-Regular-webfont.eot');
+  src: url('#{$icon-font-path}../Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('#{$icon-font-path}../Bellota-Regular-webfont.woff') format('woff'),
+       url('#{$icon-font-path}../Bellota-Regular-webfont.ttf') format('truetype'),
+       url('#{$icon-font-path}../Bellota-Regular-webfont.svg#Bellota') format('svg');
+}
