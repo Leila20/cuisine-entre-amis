@@ -5194,7 +5194,7 @@ button.close {
 main {
   margin-top: 75px;
   margin-left: 15px;
-  height: 80%; }
+  margin-bottom: 70px; }
 
 .navbar-fixed-top {
   background-color: #56CEE9;
@@ -5203,6 +5203,8 @@ main {
   margin-bottom: 0; }
 .navbar-fixed-top .container {
   height: 100%; }
+.navbar-fixed-top .search {
+  float: right; }
 .navbar-fixed-top .navbar-header img {
   float: left;
   width: 50px;
@@ -5277,6 +5279,13 @@ main {
   font-weight: bold; }
 .article-body .readmore a {
   text-decoration: none; }
+
+.readmore {
+  margin-top: -20px; }
+
+.tag {
+  margin-left: 10px;
+  margin-top: -20px; }
 
 @font-face {
   font-family: "fontleroybrownregular";
