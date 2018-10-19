@@ -3,7 +3,7 @@ from django.views.generic.edit import FormView
 
 from django.db.models import Q
 
-from django.core.urlresolvers import reverse_lazy
+from django.urls import reverse_lazy
 
 from taggit.models import Tag
 

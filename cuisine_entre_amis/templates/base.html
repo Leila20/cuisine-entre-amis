@@ -28,7 +28,7 @@
 
   <body>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-top">
       <div class="container">
         <div class="navbar-header">
           <img class="logo-top" src="{% static "img/logo.png" %}">
@@ -38,18 +38,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">Cuisine entre amis</a>
+          <a class="navbar-brand" href="#">Cuisine entre amis</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="menu nav navbar-nav">
-            <li class="active"><a href="{% url 'post' %}">Articles</a></li>
-            <li class="active"><a href="{% url 'contact' %}">Contact</a></li>
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" type="button" id="dropdownmenu" data-toggle="dropdown" aria-haspopup="true" aria-expended="false">
+                menu
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownmenu">
+                <li><a class="dropdown-item" href="{% url 'post' %}">Articles</a></li>
+                <li><a class="dropdown-item" href="{% url 'contact' %}">Contact</a></li>
+              </div>
+            </div>
           </ul>
           <form method="get" action="{% url 'search' %}" class="navbar-form search navbar-right" role="search">
             <div class="form-group">
               <input type="text" class="form-control" name="q" value="{{ request.GET.q }}" placeholder="Search">
             </div>
-            <button type="Submit" class="btn btn-default">Submit</button>
+            <button type="Submit" class="btn btn-default">Search</button>
           </form>
         </div><!--/.nav-collapse -->
       </div>

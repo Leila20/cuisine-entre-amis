@@ -4,23 +4,22 @@ main {
   margin-bottom:                70px;
 }
 
-.navbar-fixed-top {
-  background-color:             $brand-primary;
-  height:                       5%;
-  padding-bottom:               0;
-  margin-bottom:                0;
-  
+.navbar-top {
+  background:                   url("../../static/img/gateau.jpg");
+  background-repeat:            no-repeat;
+  background-size:              cover;
+  height:                       100%;
+  width:                        100%;
+  padding:                      0;
+  margin:                       0;
+  border:                       0;
+  border-radius:                0;
 
   .container {
-    height:                     100%;
+    width:                      100%;
   }
-
-  .search {
-    float:                      right;
-  }
-
+  
   .navbar-header {
-
 
     img {
       float:                    left; 
@@ -38,10 +37,20 @@ main {
   }
 
   .menu {
-    a {
-      color:                    $white;
+
+    float:                      right;
+    margin-left:                10px;
+    margin-top:                 2px;
+    padding-bottom:             8px;
+    padding-top:                4px;
+
+    .btn-group {
+      
+      .btn {
+        background-color:       $white;
+      }
     }
-  
+
     a:hover, a:focus {
       background-color:         transparent;
     }
@@ -62,7 +71,7 @@ main {
       color:                    #ff8316;
     }
     a:active, a:hover {
-      text-decoration:        none;
+      text-decoration:          none;
     }
   }
 }

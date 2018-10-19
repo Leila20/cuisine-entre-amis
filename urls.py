@@ -19,7 +19,7 @@ urlpatterns = [
     # Examples:
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
     url(r'^contact/$', ContactView.as_view(template_name='cuisine_entre_amis/contact.html'), name='contact'),
     url(r'^tagged/(?P<slug>[\w-]+)\.html$', PostTaggedView.as_view(), name='tagged_entries'),
     url(r'search\.html$', PostSearchView.as_view(), name='search'),
