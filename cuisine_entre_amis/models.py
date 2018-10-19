@@ -41,8 +41,7 @@ class Post(models.Model):
   created = models.DateTimeField(_('Created'), auto_now_add=True)
   publish_on = models.DateTimeField('Publish on', blank=True, null=True)
   intro = models.TextField(blank=True, null=True)
-  intro_pic = models.ImageField(blank=True, null=True)
-  author = models.ForeignKey('Author')
+  author = models.ForeignKey('Author', on_delete=models.CASCADE)
 
   tags = TaggableManager()
 
@@ -51,7 +50,7 @@ class Post(models.Model):
 
 
 class PostPart(models.Model):
-  post = models.ForeignKey(Post, related_name='parts')
+  post = models.ForeignKey(Post, related_name='parts', on_delete=models.CASCADE)
   type = models.CharField(_('Type'), max_length=5, choices=(
     ('nopic', _('No picture')),
     ('left', _('Picture on the left')),
