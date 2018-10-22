@@ -10,3 +10,4 @@ venv/
 uploads/
 db.sqlite3
 *swp
+*.jpg

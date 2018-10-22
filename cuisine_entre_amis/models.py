@@ -26,6 +26,8 @@ class Contact(models.Model):
 class Author(models.Model):
   first_name = models.CharField(max_length=100)
   last_name = models.CharField(max_length=100, blank=True, null=True)
+  picture = models.ImageField(blank=True, null=True)
+  bgimage= models.ImageField(blank=True, null=True)
 
   def __str__(self):
     return self.first_name
