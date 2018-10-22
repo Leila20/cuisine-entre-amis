@@ -28,6 +28,7 @@
     <p>
       {{post.author.first_name}} {%if post.author.lastname %}{{post.author.last_name}}{% endif %}
     </p>
+    <a href="{% url 'post' %}">Retour à la page d'acceuil</a>
   </div>
   <div class="title-article">
     <h2>{{object.title}}</h2>
