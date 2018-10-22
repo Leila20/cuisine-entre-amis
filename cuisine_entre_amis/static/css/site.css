@@ -5307,6 +5307,8 @@ main {
 .detail {
   height: 100vh;
   overflow: hidden; }
+.detail .author p {
+  color: #fff; }
 .detail .title-article {
   background: rgba(150, 150, 150, 0.3);
   float: left;
@@ -5329,3 +5331,12 @@ main {
   overflow-y: scroll;
   padding: 5px;
   width: 70%; }
+.detail .post > img {
+  margin-right: 10px; }
+
+a {
+  font-weight: bold;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }

@@ -3,7 +3,7 @@
 
 {%block content %}
   {%for object in object_list%}
-  <div class="article"> 
+    <div class="article {% cycle 'left' 'right' %}">
       <div class="title-article">
         <h2>{{object.title}}</h2>
       </div>
