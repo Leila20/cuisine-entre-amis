@@ -5307,6 +5307,8 @@ main {
 .detail {
   height: 100vh;
   overflow: hidden; }
+.detail .author p {
+  color: #fff; }
 .detail .title-article {
   background: rgba(150, 150, 150, 0.3);
   float: left;

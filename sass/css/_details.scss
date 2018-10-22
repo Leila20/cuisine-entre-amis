@@ -2,6 +2,12 @@
   height:                     100vh;
   overflow:                   hidden;
 
+  .author {
+    p {
+      color:                  $white;
+    }
+  }
+
   .title-article {
     background:               rgba(150, 150, 150, .3);
     float:                    left;
