@@ -5296,7 +5296,31 @@ main {
   font-family: 'Bellota';
   src: url("../fonts/bootstrap/../Bellota-Regular-webfont.eot");
   src: url("../fonts/bootstrap/../Bellota-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/../Bellota-Regular-webfont.woff") format("woff"), url("../fonts/bootstrap/../Bellota-Regular-webfont.ttf") format("truetype"), url("../fonts/bootstrap/../Bellota-Regular-webfont.svg#Bellota") format("svg"); }
+body, html {
+  height: 100vh;
+  overflow: hidden; }
+
 .title-article {
-  width: 100%; }
+  background: rgba(150, 150, 150, 0.3);
+  float: left;
+  width: 70%; }
 .title-article h2 {
   font-family: "fontleroybrownregular"; }
+
+.author {
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  height: 100vh;
+  text-align: center;
+  width: 30%; }
+.author > img {
+  border-radius: 100%;
+  width: 60%; }
+
+.post {
+  float: right;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 5px;
+  width: 70%; }
