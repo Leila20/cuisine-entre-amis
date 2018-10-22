@@ -3,23 +3,22 @@
 
 {%block content %}
   {%for object in object_list%}
-    <div class="article">
+  <div class="article"> 
       <div class="title-article">
         <h2>{{object.title}}</h2>
       </div>
-      <div class="container">
-        <div class="article-body"> 
-            <div class="article-text">
-              <p>{{object.intro|linebreaks}}</p>
-            </div>
-            {% for tag in object.tags.all %}
-            <a href="{% url 'tagged_entries' tag.slug %}" class="tag btn btn-default btn-sm">{{ tag }}</a>
-            {% endfor %}
-            <button class="readmore btn btn-sm" type="submit">
-              <a href="{% url 'post_details' object.pk %}">Read more</a>
-            </button>
+      <div class="article-body {% cycle 'left' 'right' %}"> 
+        <div class="article-text">
+          <p>{{object.intro|linebreaks}}</p>
         </div>
+        {% for tag in object.tags.all %}
+          <a href="{% url 'tagged_entries' tag.slug %}" class="tag btn btn-default btn-sm">{{ tag }}</a>
+        {% endfor %}
+        <button class="readmore btn btn-sm" type="submit">
+          <a href="{% url 'post_details' object.pk %}">Read more</a>
+        </button>
       </div>
     </div>
+    <div class="clearfix"></div>
   {%endfor%}
 {% endblock %}
