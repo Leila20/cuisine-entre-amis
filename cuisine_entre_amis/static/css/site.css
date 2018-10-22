@@ -5268,6 +5268,10 @@ main {
   height: 30%;
   padding: 10px 10px 10px 10px;
   border-radius: 5px; }
+.article-body .left {
+  float: left; }
+.article-body .right {
+  float: right; }
 .article-body .article-text {
   border-radius: 5px;
   color: #0d5566;
