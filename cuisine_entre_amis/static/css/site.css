@@ -5249,15 +5249,19 @@ main {
   float: none !important;
   margin-top: 30px; }
 
+.article {
+  width: 100%; }
+.article .left {
+  float: left; }
+.article .right {
+  float: right; }
+
 .title-article {
   width: 100%; }
 .title-article h2 {
   font-family: "fontleroybrownregular";
   font-size: 50px;
   text-align: center; }
-
-.article {
-  width: 50%; }
 
 .article-body {
   width: 50%;
@@ -5296,29 +5300,26 @@ main {
   font-family: 'Bellota';
   src: url("../fonts/bootstrap/../Bellota-Regular-webfont.eot");
   src: url("../fonts/bootstrap/../Bellota-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/../Bellota-Regular-webfont.woff") format("woff"), url("../fonts/bootstrap/../Bellota-Regular-webfont.ttf") format("truetype"), url("../fonts/bootstrap/../Bellota-Regular-webfont.svg#Bellota") format("svg"); }
-body, html {
+.detail {
   height: 100vh;
   overflow: hidden; }
-
-.title-article {
+.detail .title-article {
   background: rgba(150, 150, 150, 0.3);
   float: left;
   width: 70%; }
-.title-article h2 {
+.detail .title-article h2 {
   font-family: "fontleroybrownregular"; }
-
-.author {
+.detail .author {
   background-repeat: no-repeat;
   background-size: cover;
   float: left;
   height: 100vh;
   text-align: center;
   width: 30%; }
-.author > img {
+.detail .author > img {
   border-radius: 100%;
   width: 60%; }
-
-.post {
+.detail .post {
   float: right;
   max-height: 100vh;
   overflow-y: scroll;

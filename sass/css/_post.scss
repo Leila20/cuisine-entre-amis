@@ -1,3 +1,15 @@
+.article {
+  width:                              100%;
+  
+  .left {
+    float:                            left;
+  }
+
+  .right {
+    float:                            right;
+  }
+}
+
 .title-article {
 
   width:                              100%;
@@ -9,16 +21,12 @@
   }
 }
 
-.article {
-  width:                              50%;
-}
-
 .article-body {
   width:                              50%;
   height:                             30%; 
   padding:                            10px 10px 10px 10px;
   border-radius:                      5px;
-
+  
   .article-text{
    
     p {
