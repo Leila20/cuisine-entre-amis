@@ -1,4 +1,6 @@
 .article {
+
+
   width:                              100%;
   
   .left {
@@ -8,6 +10,12 @@
   .right {
     float:                            right;
   }
+}
+
+img {
+  display:                            flex;
+  margin:                             auto;
+  max-width:                          30%;
 }
 
 .title-article {
@@ -21,7 +29,22 @@
   }
 }
 
+@media(min-width:517px) and (max-width:750px) {
+  .intro_pic {
+    margin-top:                       150px;
+    max-width:                        50%;
+  }
+}
 .article-body {
+
+  @media(min-width:517px) and (max-width:907px) {
+    height:                           initial;
+
+    .intro_pic {
+      margin-top:                     100px;
+    }
+  }
+
   width:                              50%;
   height:                             30%; 
   padding:                            10px 10px 10px 10px;
@@ -34,7 +57,7 @@
   .right {
     float:                            right;
   }
-
+  
   .article-text{
    
     p {
@@ -50,6 +73,11 @@
   }
   
   .readmore {
+    
+    @media(min-width:517px) and (max-width:907px) {
+      margin-top:                     22px;
+    }
+
     background-color:                 $white;
     float:                            right;
     font-weight:                      bold;

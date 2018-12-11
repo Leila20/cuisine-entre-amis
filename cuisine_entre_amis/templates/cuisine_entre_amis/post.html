@@ -15,9 +15,10 @@
           <a href="{% url 'tagged_entries' tag.slug %}" class="tag btn btn-default btn-sm">{{ tag }}</a>
         {% endfor %}
         <button class="readmore btn btn-sm" type="submit">
-          <a href="{% url 'post_details' object.pk %}">Read more</a>
+          <a href="{% url 'post_details' object.pk %}">Lire plus</a>
         </button>
       </div>
+      <img class="intro_pic" src="{{object.intro_pic.url}}">
     </div>
     <div class="clearfix"></div>
   {%endfor%}
