@@ -4,7 +4,50 @@ main {
   margin-bottom:                70px;
 }
 
+.search {
+  
+  .fa-search {
+    float: right;
+    height: 26px;
+  }
+
+  margin-right: 1px; 
+
+  @media(min-width:517px) and (max-width:768px) {
+    display:                  none;
+  }
+}
+  
+.menu {
+  margin-top: 5px;
+  float: right;
+
+  @media(min-width:517px) and (max-width:768px) {
+    margin-top: -45px;
+  }
+}
+
 .navbar-top {
+  .btn-group {
+    .btn {
+      background-color:       $white;
+    }
+  
+    a:hover, a:focus {
+      background-color:         transparent;
+    }
+  }
+
+  @media(min-width:517px) and (max-width:750px) {
+    background:                 $brand-primary;
+    height:                     20px;
+
+    a {
+      font-size:                15px;
+      width:                    40%;
+    }
+  }
+
   background:                   url("../../static/img/gateau.jpg");
   background-repeat:            no-repeat;
   background-size:              cover;
@@ -18,9 +61,10 @@ main {
   .container {
     width:                      100%;
   }
-  
+
   .navbar-header {
 
+    
     img {
       float:                    left; 
       width:                    50px;
@@ -28,31 +72,14 @@ main {
     }
     
     a {
+      @media(min-width:517px) and (max-width:75px) {
+        font-size:              14px !important;
+      }
       color:                    $white;
     }
   
     a:hover, a:focus {
       color:                    $white;
-    }
-  }
-
-  .menu {
-
-    float:                      right;
-    margin-left:                10px;
-    margin-top:                 2px;
-    padding-bottom:             8px;
-    padding-top:                4px;
-
-    .btn-group {
-      
-      .btn {
-        background-color:       $white;
-      }
-    }
-
-    a:hover, a:focus {
-      background-color:         transparent;
     }
   }
 }

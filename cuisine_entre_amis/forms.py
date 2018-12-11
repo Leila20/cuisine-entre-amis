@@ -23,7 +23,6 @@ class ContactForm(forms.ModelForm):
     self.helper.layout = Layout(
       'name',
       'mail',
-      'phone',
       'message',
       Submit('submit', 'Envoyer', css_class='pull-right')
     )

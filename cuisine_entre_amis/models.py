@@ -44,6 +44,7 @@ class Post(models.Model):
   publish_on = models.DateTimeField('Publish on', blank=True, null=True)
   intro = models.TextField(blank=True, null=True)
   author = models.ForeignKey('Author', on_delete=models.CASCADE)
+  intro_pic = models.ImageField(default=True)
 
   tags = TaggableManager()
 
