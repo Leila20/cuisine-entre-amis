@@ -5206,7 +5206,8 @@ main {
     display: none; } }
 
 .menu {
-  margin-top: 5px;
+  margin-left: 5px;
+  margin-top: 6px;
   float: right; }
 @media (min-width: 517px) and (max-width: 768px) {
   .menu {
