@@ -30,6 +30,17 @@
       border-radius:          100%;
       width:                  60%;
     }
+
+    .return {
+      background:                 rgba(0, 0, 0, .4);
+      border-radius:              50px; 
+      padding:                    3px;
+    }
+
+    .name {
+      background:                 rgba(0, 0, 0, .4);
+      padding:                    3px;
+    }
   }
 
   .post {
@@ -56,3 +67,4 @@ a {
 a:hover {
   text-decoration:            none;
 }
+

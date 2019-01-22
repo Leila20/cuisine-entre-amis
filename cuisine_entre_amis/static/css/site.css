@@ -5358,6 +5358,13 @@ img {
 .detail .author > img {
   border-radius: 100%;
   width: 60%; }
+.detail .author .return {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  padding: 3px; }
+.detail .author .name {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3px; }
 .detail .post {
   float: right;
   max-height: 100vh;

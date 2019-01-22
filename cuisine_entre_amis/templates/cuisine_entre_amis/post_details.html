@@ -25,10 +25,10 @@
   
   <div class="author" style="background-image:url({{post.author.bgimage.url}});">
     <img src="{{post.author.picture.url}}">
-    <p>
+    <p class="name">
       {{post.author.first_name}} {%if post.author.lastname %}{{post.author.last_name}}{% endif %}
     </p>
-    <a href="{% url 'post' %}">Retour à la page d'acceuil</a>
+    <a class="return" href="{% url 'post' %}">Retour à la page d'acceuil</a>
   </div>
   <div class="title-article">
     <h2>{{object.title}}</h2>
