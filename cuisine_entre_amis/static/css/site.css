@@ -5262,22 +5262,9 @@ main {
 
 main {
   margin: 30; }
+main .contact {
+  padding-bottom: 50px; }
 
-.contact-form .submit {
-  background-color: #56CEE9;
-  color: #fff; }
-@media (min-width: 751px) {
-  .contact-form .submit {
-    margin-top: 40px; } }
-.contact-form .pull-right {
-  float: none !important;
-  margin-bottom: 200px;
-  margin-left: 450px;
-  margin-top: -35px; }
-@-moz-document url-prefix() {
-  .contact-form .pull-right {
-    margin-left: 550px;
-    margin-top: -40px; } }
 .article {
   width: 100%; }
 .article .left {

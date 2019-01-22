@@ -1,29 +1,8 @@
 main {
   margin: 30;
-}
 
-
-.contact-form {
-
-  .submit{
-    @media(min-width:751px) {
-      margin-top:               40px;
-    }
-    background-color:           $brand-primary;
-    color:                      $white;
-  }
-
-  .pull-right {
-    float:                      none !important;
-    margin-bottom:              200px;
-    margin-left:                450px;
-    margin-top:                 -35px;
-  }
-  
-  @-moz-document url-prefix() {
-    .pull-right {
-      margin-left:              550px;         
-      margin-top:               -40px;
-    }
+  .contact {
+    padding-bottom: 50px;
   }
 }
+
