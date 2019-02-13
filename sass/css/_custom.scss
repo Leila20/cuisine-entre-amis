@@ -4,54 +4,6 @@ main {
   margin-bottom:                70px;
 }
 
-.group-menu {
-  
-  @media(max-width: 568px) {
-    .btn-group {
-      float:                    right;
-      margin-top:               10px;
-    
-      .btn {
-        height:                 39px !important;
-      }
-    }
-
-    .form-group {
-      input {
-        float:                  left;
-        width:                  65%;
-      }
-
-      .search {
-        float:                  right;     
-      }
-    }
-  }
-}
-
-.search {
-  
-  .fa-search {
-    float: right;
-    height: 26px;
-  }
-
-  margin-right: 1px; 
-}
-  
-.menu {
-  margin-left: 5px;
-  margin-top: 6px;
-  float: right;
-
-  @media(max-width: 568px) {
-  }
-
-  @media(min-width:568px) and (max-width:768px) {
-    margin-top: -45px;
-  }
-}
-
 .navbar-top {
   .btn-group {
     .btn {
@@ -64,8 +16,6 @@ main {
   }
 
   @media(min-width:517px) and (max-width:750px) {
-    background:                 $brand-primary;
-    height:                     20px;
 
     a {
       font-size:                15px;
@@ -106,8 +56,45 @@ main {
       color:                    $white;
     }
   }
-}
 
+  .group-menu {
+
+    .menu {
+      margin-left: 5px;
+      margin-top: 6px;
+      float: right;
+
+
+      .dropdown-menu {
+        float: left;
+      }
+
+      @media(min-width:568px) and (max-width:768px) {
+        margin-top: -45px;
+      }
+    }
+
+    .form {
+      float:                      right;
+      margin-top:                 5px;
+    
+      .form-control {
+        height:                   33px;
+      }
+    }
+    
+    @media(max-width: 568px) {
+      .btn-group {
+        float:                    right;
+        margin-top:               10px;
+      
+        .btn {
+          height:                 39px !important;
+        }
+      }
+    }
+  }
+}
 
 .footer {
   height:                       40px;

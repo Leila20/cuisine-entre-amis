@@ -5196,32 +5196,6 @@ main {
   margin-left: 15px;
   margin-bottom: 70px; }
 
-@media (max-width: 568px) {
-  .group-menu .btn-group {
-    float: right;
-    margin-top: 10px; }
-  .group-menu .btn-group .btn {
-    height: 39px !important; }
-  .group-menu .form-group input {
-    float: left;
-    width: 65%; }
-  .group-menu .form-group .search {
-    float: right; } }
-
-.search {
-  margin-right: 1px; }
-.search .fa-search {
-  float: right;
-  height: 26px; }
-
-.menu {
-  margin-left: 5px;
-  margin-top: 6px;
-  float: right; }
-@media (min-width: 568px) and (max-width: 768px) {
-  .menu {
-    margin-top: -45px; } }
-
 .navbar-top {
   background: url("../../static/img/gateau.jpg");
   background-repeat: no-repeat;
@@ -5237,9 +5211,6 @@ main {
 .navbar-top .btn-group a:hover, .navbar-top .btn-group a:focus {
   background-color: transparent; }
 @media (min-width: 517px) and (max-width: 750px) {
-  .navbar-top {
-    background: #56CEE9;
-    height: 20px; }
   .navbar-top a {
     font-size: 15px;
     width: 40%; } }
@@ -5256,6 +5227,26 @@ main {
     font-size: 14px !important; } }
 .navbar-top .navbar-header a:hover, .navbar-top .navbar-header a:focus {
   color: #fff; }
+.navbar-top .group-menu .menu {
+  margin-left: 5px;
+  margin-top: 6px;
+  float: right; }
+.navbar-top .group-menu .menu .dropdown-menu {
+  float: left; }
+@media (min-width: 568px) and (max-width: 768px) {
+  .navbar-top .group-menu .menu {
+    margin-top: -45px; } }
+.navbar-top .group-menu .form {
+  float: right;
+  margin-top: 5px; }
+.navbar-top .group-menu .form .form-control {
+  height: 33px; }
+@media (max-width: 568px) {
+  .navbar-top .group-menu .btn-group {
+    float: right;
+    margin-top: 10px; }
+  .navbar-top .group-menu .btn-group .btn {
+    height: 39px !important; } }
 
 .footer {
   height: 40px;
@@ -5368,10 +5359,16 @@ img {
   overflow: hidden; }
 .detail .author p {
   color: #fff; }
+@media (max-width: 700px) {
+  .detail .author {
+    display: none; } }
 .detail .title-article {
   background: rgba(150, 150, 150, 0.3);
   float: left;
   width: 70%; }
+@media (max-width: 700px) {
+  .detail .title-article {
+    width: 100%; } }
 .detail .title-article h2 {
   font-family: "fontleroybrownregular"; }
 .detail .author {

@@ -50,11 +50,8 @@
               <li><a class="dropdown-item" href="{% url 'contact' %}">Contact</a></li>
             </div>
           </div>
-          <form method="get" action="{% url 'search' %}" class="navbar-form search-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" name="q" value="{{ request.GET.q }}">
-              <button type="Submit" class="btn btn-default search"><i class="fa fa-search"></i></button>
-            </div>
+          <form method="get" action="{% url 'search' %}" class="form" role="search">
+            <input type="text" class="form-control" placeholder="recherche" name="q" value="{{ request.GET.q }}">
           </form>
         </div>
       </div>

@@ -6,12 +6,21 @@
     p {
       color:                  $white;
     }
+  
+    @media(max-width:700px) {
+      display: none;
+    }
+  
   }
 
   .title-article {
     background:               rgba(150, 150, 150, .3);
     float:                    left;
     width:                    70%;
+
+    @media(max-width:700px) {
+      width: 100%;
+    }
 
     h2 {
       font-family:            "fontleroybrownregular";
