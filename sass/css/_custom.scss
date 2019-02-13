@@ -4,6 +4,31 @@ main {
   margin-bottom:                70px;
 }
 
+.group-menu {
+  
+  @media(max-width: 568px) {
+    .btn-group {
+      float:                    right;
+      margin-top:               10px;
+    
+      .btn {
+        height:                 39px !important;
+      }
+    }
+
+    .form-group {
+      input {
+        float:                  left;
+        width:                  65%;
+      }
+
+      .search {
+        float:                  right;     
+      }
+    }
+  }
+}
+
 .search {
   
   .fa-search {
@@ -12,10 +37,6 @@ main {
   }
 
   margin-right: 1px; 
-
-  @media(min-width:517px) and (max-width:768px) {
-    display:                  none;
-  }
 }
   
 .menu {
@@ -23,7 +44,10 @@ main {
   margin-top: 6px;
   float: right;
 
-  @media(min-width:517px) and (max-width:768px) {
+  @media(max-width: 568px) {
+  }
+
+  @media(min-width:568px) and (max-width:768px) {
     margin-top: -45px;
   }
 }
@@ -64,7 +88,6 @@ main {
   }
 
   .navbar-header {
-
     
     img {
       float:                    left; 

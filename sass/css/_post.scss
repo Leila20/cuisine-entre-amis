@@ -1,5 +1,16 @@
 .article {
 
+  @media(max-width: 568px) {
+    margin-bottom: 50px;
+    
+    .left {
+      float:                          none !important;
+    }
+
+    .right {
+      float:                          none !important;
+    }
+  }
 
   width:                              100%;
   
@@ -13,6 +24,9 @@
 }
 
 img {
+  @media(max-width:568px) {
+    display:                          none;
+  }
   display:                            flex;
   margin:                             auto;
   max-width:                          30%;
@@ -37,7 +51,11 @@ img {
 }
 .article-body {
 
-  @media(min-width:517px) and (max-width:907px) {
+  @media(max-width: 568px) {
+    float:                            none;
+    width:                            100%;
+  }
+  @media(min-width:568px) and (max-width:907px) {
     height:                           initial;
 
     .intro_pic {
@@ -47,7 +65,7 @@ img {
 
   width:                              50%;
   height:                             30%; 
-  padding:                            10px 10px 10px 10px;
+  padding:                            10px;
   border-radius:                      5px;
   
   .left {
@@ -73,8 +91,12 @@ img {
   }
   
   .readmore {
+
+    @media(max-width: 568px) {
+      padding-top:                    15px;
+    }
     
-    @media(min-width:517px) and (max-width:907px) {
+    @media(min-width:568px) and (max-width:907px) {
       margin-top:                     22px;
     }
 

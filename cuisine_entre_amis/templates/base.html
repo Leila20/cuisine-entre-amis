@@ -40,22 +40,23 @@
           </button>
           <a class="navbar-brand" href="{% url 'post' %}">Cuisine entre amis</a>
         </div>
-        <div class="btn-group menu">
-          <button class="btn dropdown-toggle" type="button" id="dropdownmenu" data-toggle="dropdown" aria-haspopup="true" aria-expended="false">
-            <i class="fa fa-bars"></i>
-            menu
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownmenu">
-            <li><a class="dropdown-item" href="{% url 'post' %}">Articles</a></li>
-            <li><a class="dropdown-item" href="{% url 'contact' %}">Contact</a></li>
+        <div class="group-menu">
+          <div class="btn-group menu">
+            <button class="btn dropdown-toggle" type="button" id="dropdownmenu" data-toggle="dropdown" aria-haspopup="true" aria-expended="false">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownmenu">
+              <li><a class="dropdown-item" href="{% url 'post' %}">Articles</a></li>
+              <li><a class="dropdown-item" href="{% url 'contact' %}">Contact</a></li>
+            </div>
           </div>
+          <form method="get" action="{% url 'search' %}" class="navbar-form search-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" name="q" value="{{ request.GET.q }}">
+              <button type="Submit" class="btn btn-default search"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
         </div>
-        <form method="get" action="{% url 'search' %}" class="navbar-form search-form navbar-right" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" name="q" value="{{ request.GET.q }}">
-            <button type="Submit" class="btn btn-default search"><i class="fa fa-search"></i></button>
-          </div>
-        </form>
       </div>
     </nav>
     <main>
