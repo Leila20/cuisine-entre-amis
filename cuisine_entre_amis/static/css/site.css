@@ -5227,26 +5227,11 @@ main {
     font-size: 14px !important; } }
 .navbar-top .navbar-header a:hover, .navbar-top .navbar-header a:focus {
   color: #fff; }
-.navbar-top .group-menu .menu {
-  margin-left: 5px;
-  margin-top: 6px;
-  float: right; }
-.navbar-top .group-menu .menu .dropdown-menu {
-  float: left; }
-@media (min-width: 568px) and (max-width: 768px) {
-  .navbar-top .group-menu .menu {
-    margin-top: -45px; } }
-.navbar-top .group-menu .form {
+
+.form-control {
   float: right;
-  margin-top: 5px; }
-.navbar-top .group-menu .form .form-control {
-  height: 33px; }
-@media (max-width: 568px) {
-  .navbar-top .group-menu .btn-group {
-    float: right;
-    margin-top: 10px; }
-  .navbar-top .group-menu .btn-group .btn {
-    height: 39px !important; } }
+  margin-top: 5px;
+  width: 20%; }
 
 .footer {
   height: 40px;

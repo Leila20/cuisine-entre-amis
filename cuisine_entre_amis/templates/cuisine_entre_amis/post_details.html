@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load disqus_tags %}
 
 <html class="detail">
   <head>
@@ -22,30 +23,35 @@
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/static/cookielaw/js/cookielaw.js"></script>
   </head>
-  
-  <div class="author" style="background-image:url({{post.author.bgimage.url}});">
-    <img src="{{post.author.picture.url}}">
-    <p class="name">
-      {{post.author.first_name}} {%if post.author.lastname %}{{post.author.last_name}}{% endif %}
-    </p>
-  </div>
-  <div class="title-article">
-    <h2>{{object.title}}</h2>
-  </div>
-  <div class="post">
-    {% for part in object.parts.all %}
-      {% if part.type == 'left' %}
-        <img style="max-width: 40%; float:left;" src="{{part.pic.url}}" >
-      {% elif part.type == 'right' %}
-        <img style="max-width:40%; float:right;" src="{{part.pic.url}}" >
-      {% elif part.type == 'pic' %}
-        <div  src="{{part.pic}}" ></div><p></p>
-      {% endif %}
-      {% if part.type != 'pic' and part.type != '2pics' and part.type != '3pics' %}
-        {{part.text|linebreaks}}
-      {% endif %}
-      <div class="clearfix"></div>
-    {% endfor %}
-    <a class="return" href="{% url 'post' %}">Retour à la page d'acceuil</a>
-  </div>
+ 
+  <body> 
+    <div class="author" style="background-image:url({{post.author.bgimage.url}});">
+      <img src="{{post.author.picture.url}}">
+      <p class="name">
+        {{post.author.first_name}} {%if post.author.lastname %}{{post.author.last_name}}{% endif %}
+      </p>
+    </div>
+    <div class="title-article">
+      <h2>{{object.title}}</h2>
+    </div>
+    <div class="post">
+      {% for part in object.parts.all %}
+        {% if part.type == 'left' %}
+          <img style="max-width: 40%; float:left;" src="{{part.pic.url}}" >
+        {% elif part.type == 'right' %}
+          <img style="max-width:40%; float:right;" src="{{part.pic.url}}" >
+        {% elif part.type == 'pic' %}
+          <div  src="{{part.pic}}" ></div><p></p>
+        {% endif %}
+        {% if part.type != 'pic' and part.type != '2pics' and part.type != '3pics' %}
+          {{part.text|linebreaks}}
+        {% endif %}
+        <div class="clearfix"></div>
+      {% endfor %}
+      <a class="return" href="{% url 'post' %}">Retour à la page d'acceuil</a>
+      {% disqus_show_comments %}
+    </div>
+  </body>
 </html>
+
+

@@ -31,12 +31,18 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'taggit',
+    'disqus',
 
     'crispy_forms',
     'cookielaw',
     # 'kombu.transport.django.KombuAppConfig',
 )
+
+DISQUS_API_KEY = 'bQENG1XUGDw9BhiyKBBKrMBnvBYgKiAbyx1DjHdTPLJgpSI5xz8b38tqWvPiPJEW'
+DISQUS_WEBSITE_SHORTNAME = 'cuisineentreamis'
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
