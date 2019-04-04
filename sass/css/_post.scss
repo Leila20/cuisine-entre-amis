@@ -1,7 +1,14 @@
 .article {
 
+  margin-bottom: 50px;
+
+  @media screen and (min-width:240px) and (max-width:1030px){
+    /*IE10*/ 
+    margin-bottom: 250px;
+  }
+
   @media(max-width: 568px) {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     
     .left {
       float:                          none !important;

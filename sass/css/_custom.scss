@@ -60,6 +60,12 @@ main {
 }
 
 .form-control {
+
+  @media(min-width:0px) and (max-width:767px) {
+    margin-top:               -45px;
+    width:                    40%;
+  }
+
   float:                      right;
   margin-top:                 5px;
   width:                      20%;

@@ -5232,6 +5232,10 @@ main {
   float: right;
   margin-top: 5px;
   width: 20%; }
+@media (min-width: 0px) and (max-width: 767px) {
+  .form-control {
+    margin-top: -45px;
+    width: 40%; } }
 
 .footer {
   height: 40px;
@@ -5251,10 +5255,15 @@ main .contact {
   padding-bottom: 50px; }
 
 .article {
+  margin-bottom: 50px;
   width: 100%; }
+@media screen and (min-width: 240px) and (max-width: 1030px) {
+  .article {
+    /*IE10*/
+    margin-bottom: 250px; } }
 @media (max-width: 568px) {
   .article {
-    margin-bottom: 50px; }
+    margin-bottom: 70px; }
   .article .left {
     float: none !important; }
   .article .right {
